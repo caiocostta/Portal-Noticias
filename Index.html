@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portal de Notícias</title>
+        <meta charset="UTF-8"/>
+        <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/>
+        <link href="assets/CSS/Style.css" rel="stylesheet"/>
+        <script type="text/javascript" src="assets/JS/Script.js"></script>
+    </head>
+    <body>
+        <div class="topo">
+            <div class="topoint">
+                <div class="topoleft">
+                    <ul>
+                        <li><a href="./Index.html" class="ativo">Home</a></li>
+                        <li><a href="quem-somos"> Quem Somos </a></li>
+                        <li><a href="anuncie-aqui"> Anuncie Aqui</a></li>
+                        <li><a href="contatos">Contatos</a></li>
+                    </ul>
+                </div>
+                <div class="toporight">
+                    <input type="image" src="assets/IMAGES/lupa.png" border="0" width="26" height="26"/>
+                    <input type="text" name="busca" class="topobusca" placeholder="Busca..."/>
+                    <a href=""><img src="assets/IMAGES/youtube.png" border="0" height="26" width="26"/></a>
+                    <a href=""><img src="assets/IMAGES/twitter.png" border="0" height="26" width="26"/></a>
+                    <a href=""><img src="assets/IMAGES/facebook.png" border="0" height="26" width="26"/></a>
+                    <a href=""><img src="assets/IMAGES/googleplus.png" border="0" height="26" width="26"/></a>
+                    <a href=""><img src="assets/IMAGES/rss.png" border="0" height="26" width="26"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="topo2">
+            <div class="topo2int">
+                <div class="logo">
+                    <img src="assets/IMAGES/logo.png" border="0" width="230"/>
+                </div>
+                <div class="banner"></div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menuint">
+                <img src="assets/IMAGES/menu.png" border="0" width="40" height="40" class="menumobile" onclick="toggleMenu()"/>
+                <ul id="menu">
+                    <li><a href="./Index.html" class="ativo">Home</a></li>
+                    <li><a href="./">Economia</a></li>
+                    <li>
+                        <a href="./">Entretenimento</a>
+                        <img src="assets/IMAGES/arrowdown.jpg" border ="0" width="10px"/>
+                        <div class="submenu">
+                            <a href="./"><div class="submenuitem">Sub Menu 1</div></a>
+                            <a href="./"><div class="submenuitem">Sub Menu 2</div></a>
+                            <a href="./"><div class="submenuitem">Sub Menu 3</div></a>
+                            <a href="./"><div class="submenuitem">Sub Menu 4</div></a>
+                            <a href="./"><div class="submenuitem">Sub Menu 5</div></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./">Esportes</a>
+                        <img src="assets/IMAGES/arrowdown.jpg" border ="0" width="10px"/>
+                        <div class="submenu">
+                            <a href="./"><div class="submenuitem">Sub Menu 1</div></a>
+                            <a href="./"><div class="submenuitem">Sub Menu 2</div></a>
+                            <a href="./"><div class="submenuitem">Sub Menu 3</div></a>
+                        </div>
+                    </li>
+                    <li><a href="./">Geral</a></li>
+                    <li>
+                        <a href="./">Notícias</a>
+                        <img src="assets/IMAGES/arrowdown.jpg" border ="0" width="10px"/>
+                        <div class="submenu">
+                            <a href="./"><div class="submenuitem">Sub Menu 1</div></a>
+                            <a href="./"><div class="submenuitem">Sub Menu 2</div></a>
+                            <a href="./"><div class="submenuitem">Sub Menu 3</div></a>
+                            <a href="./"><div class="submenuitem">Sub Menu 4</div></a>
+                        </div>
+                    </li>
+                    <li><a href="./">Polícia</a></li>
+                    <li><a href="./">Vídeos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ultimasnoticias">
+            <div class="ultimasnoticiasint">
+                <div class="ultnoticiasarea">
+                    <div class="ultnoticiastitulo">ULTIMAS NOTÍCIAS</div>
+                    <div class="ultnoticiasnoticia">Alguma notícia do dia que irá ficar aqui</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="containerint">
+                <div class="leftside">
+                    <div class="slideshow" id="slideshow">
+                        <div class="slidebolinhas">
+                            <div class="bolinha" onclick="mudarSlide(0)"></div>
+                            <div class="bolinha" onclick="mudarSlide(1)"></div>
+                            <div class="bolinha" onclick="mudarSlide(2)"></div>
+                            <div class="bolinha" onclick="mudarSlide(3)"></div>
+                        </div>
+                        <div class="slideshowarea">
+                            <a href="https://esportes.r7.com/prisma/cosme-rimoli/messi-deve-sua-setima-bola-de-ouro-ao-brasil-de-neymar-e-e-o-primeiro-do-psg-a-ser-o-melhor-do-mundo-30112021">
+                                <div class="slide" style="background-image:url('assets/IMAGES/messi.jpeg')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfotitulo">Messi ganha bola de ouro do ano de 2020</div>
+                                        <div class="slideinfosubtitulo">Jogador recebeu neste ano sua setíma bola de ouro na carreira.</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://br.noticias.yahoo.com/bomba-da-segunda-guerra-mundial-explode-e-deixa-feridos-na-alemanha-151951222.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAJ-7ZNgy1ND8ojKc2XBmOuj62fS0voP768zqqRCkSWT1b7Oo1uKRA2aPP7Usd-Z3nKkK1Syurj6uwKJQqc6bfc3EOYQQWbn2L-lv7Ms7VD7nzu4S4K9pGFDGGp34e9-4Su9RfhAZ_T3G6OrxSCPTUVbuf1VhvCW7pipzIJLRd6To">
+                                <div class="slide" style="background-image:url('assets/IMAGES/noticia2.jpg')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfotitulo">Bomba da Segunda Guerra Mundial explode e deixa feridos na Alemanha</div>
+                                        <div class="slideinfosubtitulo">Hoje pela manhã, uma bomba da Segunda Guerra Mundial explodiu perto da estação central de trem de Munique.</div>
+                                    </div>
+                                </div>
+                             </a>
+
+                            <a href="https://g1.globo.com/pop-arte/musica/noticia/2021/12/01/retrospectiva-spotify-como-ver-especial-wrapped-com-musicas-que-voce-mais-ouviu.ghtml">
+                                <div class="slide" style="background-image:url('assets/IMAGES/noticia3.png')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfotitulo">Retrospectiva Spotify: como ver especial 'wrapped'</div>
+                                        <div class="slideinfosubtitulo">Serviço mostra um resumo com canções e artistas preferidos, além de dicas de novidades.</div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://oglobo.globo.com/saude/omicron-conheca-os-cinco-sintomas-da-nova-variante-do-coronavirus-25300800">
+                                <div class="slide" style="background-image:url('assets/IMAGES/noticia4.jpg')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfotitulo">Ômicron: conheça os cinco sintomas da nova variante do coronavírus</div>
+                                        <div class="slideinfosubtitulo">Sinais da nova cepa são diferentes da Delta, responsável pela maioria dos casos recentes de Covid-19 no mundo</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widgettitulo">NOTÍCIAS</div>
+                        <div class="widgetconteudo">
+                            <div class="noticiaarea1">
+                                <a href="./">
+                                    <div class="noticia-item noticiabig">
+                                        <div class="noticiaimg">
+                                            <img src="assets/IMAGES/noticiaprincipal.jpg" border="0" width="80" height="80"/>
+                                        </div>
+                                        <div class="noticiatitulo">Título da Notícia </div>
+                                        <div class="noticiainfo">Aqui ficará as informações da notícia </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="noticiaarea2">
+                                <a href="./">
+                                    <div class="noticia-item">
+                                        <div class="noticiaimg">
+                                            <img src="assets/IMAGES/noticiasecundaria.jpg" border="0" width="80" height="80"/>
+                                        </div>
+                                        <div class="noticiatitulo">Título da Notícia</div>
+                                        <div class="noticiainfo">Aqui ficará as informações da notícia</div>
+                                    </div>
+                                </a>
+                                <a href="./">
+                                    <div class="noticia-item">
+                                        <div class="noticiaimg">
+                                            <img src="assets/IMAGES/noticiasecundaria.jpg" border="0" width="80" height="80"/>
+                                        </div>
+                                        <div class="noticiatitulo">Título da Notícia</div>
+                                        <div class="noticiainfo">Aqui ficará as informações da notícia</div>
+                                    </div>
+                                </a>
+                                <a href="./">
+                                    <div class="noticia-item">
+                                        <div class="noticiaimg">
+                                            <img src="assets/IMAGES/noticiasecundaria.jpg" border="0" width="80" height="80"/>
+                                        </div>
+                                        <div class="noticiatitulo">Título da Notícia</div>
+                                        <div class="noticiainfo">Aqui ficará as informações da notícia</div>
+                                    </div>
+                                </a>
+                                <a href="./">
+                                    <div class="noticia-item">
+                                        <div class="noticiaimg">
+                                            <img src="assets/IMAGES/noticiasecundaria.jpg" border="0" width="80" height="80"/>
+                                        </div>
+                                        <div class="noticiatitulo">Título da Notícia</div>
+                                        <div class="noticiainfo">Aqui ficará as informações da notícia</div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div style="clear:both"></div>                                            
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widgettitulo">ESPORTES</div>
+                        <div class="widgetconteudo">
+                            <div class="noticiaarea1">
+                                <a href="./">
+                                    <div class="noticia-item noticiabig">
+                                        <div class="noticiaimg">
+                                            <img src="assets/IMAGES/noticiaprincipal.jpg" border="0" width="80" height="80"/>
+                                        </div>
+                                        <div class="noticiatitulo">Título da Notícia </div>
+                                        <div class="noticiainfo">Aqui ficará as informações da notícia</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="noticiaarea2">
+                                <a href="./">
+                                    <div class="noticia-item">
+                                        <div class="noticiaimg">
+                                            <img src="assets/IMAGES/noticiasecundaria.jpg" border="0" width="80" height="80"/>
+                                        </div>
+                                        <div class="noticiatitulo">Título da Notícia</div>
+                                        <div class="noticiainfo">Aqui ficará as informações da notícia</div>
+                                    </div>
+                                </a>
+                                <a href="./">
+                                    <div class="noticia-item">
+                                        <div class="noticiaimg">
+                                            <img src="assets/IMAGES/noticiasecundaria.jpg" border="0" width="80" height="80"/>
+                                        </div>
+                                        <div class="noticiatitulo">Título da Notícia</div>
+                                        <div class="noticiainfo">Aqui ficará as informações da notícia</div>
+                                    </div>
+                                </a>
+                                <a href="./">
+                                    <div class="noticia-item">
+                                        <div class="noticiaimg">
+                                            <img src="assets/IMAGES/noticiasecundaria.jpg" border="0" width="80" height="80"/>
+                                        </div>
+                                        <div class="noticiatitulo">Título da Notícia</div>
+                                        <div class="noticiainfo">Aqui ficará as informações da notícia</div>
+                                    </div>
+                                </a>
+                                <a href="./">
+                                    <div class="noticia-item">
+                                        <div class="noticiaimg">
+                                            <img src="assets/IMAGES/noticiasecundaria.jpg" border="0" width="80" height="80"/>
+                                        </div>
+                                        <div class="noticiatitulo">Título da Notícia</div>
+                                        <div class="noticiainfo">Aqui ficará as informações da notícia</div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div style="clear:both"></div>                                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rightside">
+                    <div class="widget">
+                        <div class="widgettitulo">SOCIAL</div>
+                        <div class="widgetconteudo">
+                            <a href=""><img src="assets/IMAGES/rss.png" border="0" height="26" width="26"/></a>
+                            <a href=""><img src="assets/IMAGES/googleplus.png" border="0" height="26" width="26"/></a>
+                            <a href=""><img src="assets/IMAGES/facebook.png" border="0" height="26" width="26"/></a>
+                            <a href=""><img src="assets/IMAGES/twitter.png" border="0" height="26" width="26"/></a>
+                            <a href=""><img src="assets/IMAGES/youtube.png" border="0" height="26" width="26"/></a>                                               
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widgettitulo">ULTIMAS NOTICIAS</div>
+                        <div class="widgetconteudo">
+                            <div class="noticiaitem">
+                                <a href="./">Aqui vão ficar os títulos das notícias para que o usuário consiga ver e acessar de uma forma rápida e prática.</a>
+                            </div>
+                            <div class="noticiaitem">
+                                <a href="./">Aqui ficará o título da segunda notícia, seguindo a sequência.</a>
+                            </div>
+                            <div class="noticiaitem">
+                                <a href="./">Aqui ficará o título da terceira notícia, seguindo a sequência e dessa forma vai seguir nesta parte do site.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widgettitulo">PUBLICIDADE</div>
+                        <div class="widgetconteudo">
+                            <img src="assets/IMAGES/banner.jpg" border="0" width="275"/>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widgettitulo">ENCONTRE-NOS NO FACEBOOK</div>
+                        <div class="widgetconteudo">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=275&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="275" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
